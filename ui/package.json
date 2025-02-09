@@ -5,7 +5,7 @@
   "scripts": {
     "build": "npm run wasm && nuxt build",
     "dev": "npm run wasm && nuxt dev",
-    "generate": "npm run wasm && nuxt generate",
+    "generate": "npm run wasm && nuxt generate && cp ../app/pkg/*.wasm ./dist/_nuxt",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "wasm": "wasm-pack build ../app --target web"
