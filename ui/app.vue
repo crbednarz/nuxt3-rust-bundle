@@ -1,9 +1,9 @@
 <script setup>
-import init, {test} from 'app';
+import init, {run} from 'app';
 
-onBeforeMount(async () => {
+onMounted(async () => {
   await init();
-  alert(test());
+  run();
 });
 
 </script>

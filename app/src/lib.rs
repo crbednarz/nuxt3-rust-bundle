@@ -1,3 +1,4 @@
+use viewer;
 use wasm_bindgen::prelude::*;
 
 #[wasm_bindgen]
@@ -8,6 +9,11 @@ extern "C" {
 #[wasm_bindgen]
 pub fn greet() {
     alert("Hello, World!");
+}
+
+#[wasm_bindgen]
+pub fn run() {
+    viewer::run();
 }
 
 #[wasm_bindgen]
